@@ -661,28 +661,7 @@
 #  representing the file - contents_manager: this ContentsManager instance
 #c.FileContentsManager.post_save_hook = None
 
-## 
-#c.FileContentsManager.root_dir = ''
 
-## DEPRECATED, use post_save_hook. Will be removed in Notebook 5.0
-#c.FileContentsManager.save_script = False
-
-#------------------------------------------------------------------------------
-# NotebookNotary(LoggingConfigurable) configuration
-#------------------------------------------------------------------------------
-
-## A class for computing and verifying notebook signatures.
-
-## The hashing algorithm used to sign notebooks.
-#c.NotebookNotary.algorithm = 'sha256'
-
-## The sqlite file in which to store notebook signatures. By default, this will
-#  be in your Jupyter data directory. You can set it to ':memory:' to disable
-#  sqlite writing to the filesystem.
-#c.NotebookNotary.db_file = ''
-
-## The secret key with which notebooks are signed.
-#c.NotebookNotary.secret = b''
 
 ## The file where the secret key is stored.
 #c.NotebookNotary.secret_file = ''
